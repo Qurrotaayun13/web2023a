@@ -1,7 +1,7 @@
 <a href="/apoteker/create">Add Apoteker</a>
 <table border="1">
     <th>
-        <td>NAMA</td>
+        <td>NAMA LENGKAP</td>
         <td>JENIS KELAMIN</td>
         <td>ALAMAT</td>
         <td>AKSI</td>
