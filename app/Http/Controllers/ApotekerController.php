@@ -33,4 +33,13 @@ class ApotekerController extends Controller
         $apoteker->update($request->except(['_token','submit']));
         return redirect('/apoteker');
     }
+    public function destroy($id)
+    {
+        $apoteker = Apoteker::find($id);
+        $apoteker->delete();
+        return redirect('/apoteker');
+    }
+
+ 
+
 }
