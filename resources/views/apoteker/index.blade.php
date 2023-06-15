@@ -4,12 +4,18 @@
     <div class="container">
     <a  class="btn btn-primary" href="/apoteker/create">Add Apoteker</a>
         <table class="table table-hover">
-            <th>
-                <td>NAMA LENGKAP</td>
-                <td>JENIS KELAMIN</td>
-                <td>ALAMAT</td>
-                <td>UPDATE</td>
-            </th>
+        <form action="{{ route('logout') }}" method="POST" class="d-flex" role="search">
+                @csrf
+                @method('DELETE')
+                <button class="btn btn-danger"  type="submit">Logout</button>
+            </form>
+            <tr>
+                <th>No</th>
+                <th>NAMA LENGKAP</th>
+                <th>JENIS KELAMIN</th>
+                <th>ALAMAT</th>
+                <th>UPDATE</th>
+            </tr>
             @foreach($apoteker as $a)
             <tr>
                 <td>{{$a->id}}</td>
@@ -25,6 +31,7 @@
                         <input class="btn btn-danger" type="submit" value="Delete">
                     </form>
                 </div>
+                
                 </td>
             </tr>
             @endforeach

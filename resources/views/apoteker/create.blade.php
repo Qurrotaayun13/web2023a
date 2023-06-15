@@ -23,7 +23,7 @@
             <textarea class="form-control" name="alamat" rows="10" id="alamat"></textarea><br>
     </div>
         <input type="submit" name="submit" class="btn btn-info" value="save" >
-
+        <a href="http://127.0.0.1:8000/apoteker" class="btn btn-md btn-danger">Back</a>
         </form>
 </div>
     
