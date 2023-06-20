@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-<h1>Create Apoteker</h1>
+<h1 class="text-center my-4">Tambah Anggota Apoteker</h1>
     <form action="/apoteker/store" method="POST">
     <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nama</label>

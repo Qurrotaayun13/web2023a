@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h1>Edit Data Apoteker</h1>
+    <h1 class="text-center my-4">Edit Data Apoteker</h1>
 
     <form action="/apoteker/{{$apoteker->id}}" method="POST">
         @method('put')
